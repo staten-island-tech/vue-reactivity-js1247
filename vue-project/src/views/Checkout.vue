@@ -1,18 +1,18 @@
 <template>
   <div class="checkout">
     <h1>This is the checkout page</h1>
-    <Checkout
-      v-for="item in items"
+    <ShoppingCart
+      v-for="item in snacks"
       :name="item.name"
       :type="item.type"
       :price="item.price"
       :image="item.image"
-    />
+    ></ShoppingCart>
   </div>
 </template>
 <script setup>
-import { items } from "@/components/Checkout.vue"
+import ShoppingCart from "@/components/ShoppingCart.vue";
+import { snacks } from "@/stores/array.js";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
