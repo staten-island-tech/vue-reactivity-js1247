@@ -3,16 +3,9 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
-    <div>
-      <h1>Snack Shop</h1>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/Checkout">Checkout</RouterLink>
-      </nav>
-    </div>
-  </header>
-  
+  <header>Snack Shop</header>
+  <RouterLink class="router" to="/">Shop</RouterLink>
+  <RouterLink class="router" to="/checkout">Checkout</RouterLink>
   <RouterView />
 </template>
 
@@ -20,62 +13,24 @@ import { RouterLink, RouterView } from "vue-router";
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace;
 }
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.router {
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 0 10px;
+  background-color: rgb(197, 197, 175);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.router:hover {
+  color: #ffffff;
 }
 </style>
