@@ -11,8 +11,7 @@
   </div>
 </template>
 <script setup>
-import ShoppingCart from "@/components/ShoppingCart.vue";
-import { snacks } from "@/stores/array.js";
+
 </script>
 
 <style scoped></style>
