@@ -39,7 +39,7 @@ const addToCart = (snack) => {
 }
 
 .snack-image {
-  max-width: 100%;
+  width: auto;
   height: auto;
   border-radius: 8px 8px 0 0;
 }
