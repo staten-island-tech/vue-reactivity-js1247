@@ -12,13 +12,13 @@
 import { snacks } from "@/stores/array.js";
 import { store } from "@/components/store.js";
 
-const addToCart = (snack) => {
+function addToCart(snack) {
   store.cart.push({
     name: snack.name,
     price: snack.price,
     img: snack.image,
   });
-};
+}
 </script>
 
 <style scoped>
