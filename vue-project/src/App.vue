@@ -15,7 +15,6 @@ header {
   max-height: 100vh;
   text-align: center;
   font-size: 75px;
-  font-family: "Courier New", Courier, monospace;
 }
 .router {
   text-decoration: none;
@@ -28,7 +27,6 @@ header {
   font-weight: bold;
   cursor: pointer;
   transition: color 0.3s;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .router:hover {
   color: #ffffff;

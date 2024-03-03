@@ -1,16 +1,16 @@
 <template>
-  <div class="checkout-container">
+  <div class="checkout">
     <h1>Checkout</h1>
 
     <div v-if="cart.length === 0">
-      <h1>Your cart is empty</h1>
+      <h2>Your cart is empty</h2>
     </div>
     <div v-else>
       <div v-for="(item) in cart" class="cart-item">
-        <h1>{{ item.name }} - ${{ item.price }}</h1>
+        <h2>{{ item.name }} - ${{ item.price }}</h2>
       </div>
       <div class="total-price">
-        <h1>Total: ${{ calculateTotalPrice() }}</h1>
+        <h2>Total: ${{ calculateTotalPrice() }}</h2>
       </div>
 
       <button @click="completePurchase" class="complete-purchase">Complete Purchase</button>
@@ -35,17 +35,25 @@ function completePurchase() {
 </script>
 
 <style scoped>
-.checkout-container {
+.checkout {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: grey;
+}
+
 .cart-item {
-  border-bottom: 1px solid #ebe2e2;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid #ddd2d2;
+  padding: 10px;
   align-items: center;
 }
 
@@ -70,3 +78,5 @@ function completePurchase() {
   background-color: #4e8c5a;
 }
 </style>
+
+

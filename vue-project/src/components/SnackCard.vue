@@ -23,31 +23,28 @@ function addToCart(snack) {
 
 <style scoped>
 .card {
-  border: 1px solid #ebe2e2;
+  border: 1px solid #d8d6d6;
   border-radius: 8px;
   margin: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.025);
-}
-
-.name {
-  font-size: 3rem;
-  margin: 10px 0;
+  padding: 15px;
+  text-align: center;
 }
 
 .snack-image {
-  width: auto;
-  height: auto;
-  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 10px;
 }
 
 .type,
 .price {
   margin-top: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .add-to-cart {
@@ -59,7 +56,7 @@ function addToCart(snack) {
   padding: 10px;
   width: 100%;
   transition: background-color 0.3s ease-in-out;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .add-to-cart:hover {
