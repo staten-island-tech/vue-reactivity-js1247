@@ -53,8 +53,7 @@ h2 {
 
 .cart-item {
   border-bottom: 1px solid #ddd2d2;
-  padding: 10px;
-  align-items: center;
+  padding: 5px;
 }
 
 .total-price {
@@ -78,5 +77,3 @@ h2 {
   background-color: #4e8c5a;
 }
 </style>
-
-

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Welcome to the Snack Shop!</h1>
+    <h1 class="welcome">Welcome to the Snack Shop!</h1>
     <SnackCard />
     <router-link to="/checkout" class="checkout-btn">Go to Checkout</router-link>
   </div>
@@ -30,5 +30,9 @@ export default {
 
 .checkout-btn:hover {
   background-color: #4e8c5a;
+}
+
+.welcome{
+  text-align: center;
 }
 </style>

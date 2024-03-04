@@ -19,7 +19,7 @@ header {
 .router {
   text-decoration: none;
   padding: 15px 20px;
-  margin: 0 10px;
+  margin: 20px;
   background-color: rgb(197, 197, 175);
   border: none;
   border-radius: 5px;
