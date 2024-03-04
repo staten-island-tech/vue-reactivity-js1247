@@ -30,7 +30,6 @@ function calculateTotalPrice() {
 
 function completePurchase() {
   window.alert('Thank you for shopping!');
-  store.cart = [];
 }
 </script>
 
